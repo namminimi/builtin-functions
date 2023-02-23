@@ -9,7 +9,7 @@ const HeaderWrapper = styled.div`
 `;
 
 const HeaderUl = styled.ul`
-    dispaly: flex;
+    display: flex;
     align-items: center;
     li{
         list-style:none;
@@ -18,16 +18,17 @@ const HeaderUl = styled.ul`
 `
 type HeaderProps = {
     sitename: string;
+    onChange: (subject:number)=>void;
 }
 
-const Header = ({sitename}: HeaderProps) => {
+const Header = ({sitename, onChange}: HeaderProps) => {
     return (
         <HeaderWrapper>
             <h1>{sitename}</h1>
             <HeaderUl>
                 <li>과목등록</li>
                 <li>내장함수등록</li>
-                <li>함수리스트</li>
+                <li onClick={()=>onChange(0)}>함수리스트</li>
             </HeaderUl>
         </HeaderWrapper>
     );

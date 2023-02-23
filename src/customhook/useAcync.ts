@@ -11,7 +11,7 @@ export type ListdataType = { //(db datajson 타입설정)
     "subjects": number,
     "name": string,
     "type": string,
-    "systex": string,
+    "syntex": string,
     "desc": string
 }
 //상태타입

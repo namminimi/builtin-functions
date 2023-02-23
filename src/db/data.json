@@ -19,7 +19,7 @@
             "subjects":1,
             "name": "map()",
             "type": "array",
-            "systex": "배열변수.map(li=>li+1)",
+            "syntex": "배열변수.map(li=>li+1)",
             "desc": "배열요소의 형태를 변경하여 새로운 배열로 리턴"
         },
         {
@@ -27,7 +27,7 @@
             "subjects":1,
             "name": "filter()",
             "type": "array",
-            "systex": "배열변수.filter(li=>li>1)",
+            "syntex": "배열변수.filter(li=>li>1)",
             "desc": "배열요소중 조건에 맞는 요소만 새로운 배열로 리턴"
         },
         {
@@ -35,7 +35,7 @@
             "subjects":1,
             "name": "replace()",
             "type": "string",
-            "systex": "배열변수.filter(li=>li>1)",
+            "syntex": "배열변수.filter(li=>li>1)",
             "desc": "배열요소중 조건에 맞는 요소만 새로운 배열로 리턴"
         },
         {
@@ -43,7 +43,7 @@
             "subjects":1,
             "name": "strlen()",
             "type": "string",
-            "systex": "strlen(문자열)",
+            "syntex": "strlen(문자열)",
             "desc": "문자열 길이 리턴"
         },
         {
@@ -51,7 +51,7 @@
             "subjects":2,
             "name": "var_dump()",
             "type": "모든타입",
-            "systex": "var_dump(변수)",
+            "syntex": "var_dump(변수)",
             "desc": "데이터의 값과 타입을 반환"
         },
         {
@@ -59,7 +59,7 @@
             "subjects":2,
             "name": "strtoupper()",
             "type": "string",
-            "systex": "strtoupper(변수)",
+            "syntex": "strtoupper(변수)",
             "desc": "대문자로 변경후 반환"
         },
         {
@@ -67,7 +67,7 @@
             "subjects":3,
             "name": "useState()",
             "type": "훅함수",
-            "systex": "const [state, setState] = useState",
+            "syntex": "const [state, setState] = useState",
             "desc": "상태관리"
         }
     ]
