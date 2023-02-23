@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 const HeaderWrapper = styled.div`
@@ -26,9 +27,9 @@ const Header = ({sitename, onChange}: HeaderProps) => {
         <HeaderWrapper>
             <h1>{sitename}</h1>
             <HeaderUl>
-                <li>과목등록</li>
-                <li>내장함수등록</li>
-                <li onClick={()=>onChange(0)}>함수리스트</li>
+                <li><Link to="/addSubject">과목등록</Link></li>
+                <li><Link to="/addfunctions">내장함수등록</Link></li>
+                <li onClick={()=>onChange(0)}><Link to="/">함수리스트</Link></li>
             </HeaderUl>
         </HeaderWrapper>
     );

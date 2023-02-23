@@ -4,6 +4,9 @@ import './App.css';
 import Header from './components/Header';
 import Subjects from './components/Subjects';
 import Lists from './components/Lists';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AddSubject from './components/AddSubject';
+import AddFunctions from './components/AddFunctions';
 
 function App() {
   const [subject, setSubject] = useState(0);
@@ -11,11 +14,20 @@ function App() {
     setSubject(subject);
   }
   return (
-    <div className="App">
-      <Header sitename="typescript" onChange={onChange}/>
-      <Subjects onChange={onChange}/>
-      <Lists subject={subject}/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header sitename="typescript" onChange={onChange}/>
+        <Routes>
+          <Route path="/" element={<>
+            <Subjects onChange={onChange}/>
+            <Lists subject={subject}/>
+          </>}/>
+          <Route path="/addSubject" element={<AddSubject/>}/>
+          <Route path="/addfunctions" element={<AddFunctions/>}/>
+        </Routes>
+        
+      </div>
+    </BrowserRouter>
   );
 }
 
